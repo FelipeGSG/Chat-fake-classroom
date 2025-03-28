@@ -1,0 +1,332 @@
+*{
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: .0178571429em;
+}
+body{
+    margin: 0;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#classroomLink{
+    font-size: 1.3em;
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+    #classroomLink:hover{
+        color: rgb(30, 133, 35);
+        text-decoration: underline;
+    }
+
+main{
+    display: flex;
+    min-height: 80vh;
+}
+    #banner{
+        background-image: url(../img/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: aquamarine;
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 1000px;
+        height: 250px;
+    }
+    #textBanner{
+        box-sizing: border-box;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.733));
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: end;
+        color: white;
+    }
+    #textBanner h1{
+        margin-left: 10px;
+        margin: 0;
+        font-weight: 600;
+    }
+    #textBanner h3{
+        margin-left: 10px;
+        margin: 0;
+    }
+
+
+img{
+    width: 24px;
+    margin: 10px;
+}
+    img:not(#classroomIcon, #banner){
+        filter: brightness(0) saturate(100%) invert(40%) sepia(10%) saturate(255%) hue-rotate(173deg) brightness(90%) contrast(89%);
+    }
+aside{
+    min-width: 300px;
+    border-right: 1px solid lightgray;
+}
+.secao * {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.secao img{
+    margin: 0 15px;
+    margin-right: 20px;
+}
+.itemInscricao, .secao{
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    max-width: 250px;
+    height: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+    .itemInscricao:hover, .secao:hover{
+        background-color: rgb(238, 238, 238);
+        width: 90%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+.inscricaoText{
+    display: flex;
+    flex-direction: column;
+}
+.inscricaoText h4,
+.inscricaoText h6,
+.secao h4{
+    color: #3c4043;
+    font-weight: 600;
+    font-size: 0.8em;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+h6{
+    color: rgb(94, 94, 94);
+}
+
+.imgTurma{
+    text-align: center;
+    clip-path: circle();
+    width: 10px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin: 0 15px;
+}
+.pqNaoTaVerde{
+    background-color: rgb(30, 107, 34);
+}
+
+#conteudo{
+    /* background-color: lightskyblue; */
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.subNav{
+    padding: 0px 15px;
+    display: flex;
+}
+.opNav{
+    padding: 2px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0);
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+}
+    .opNav:hover{
+        background-color: rgba(234, 234, 234, 0.5);
+    }
+    .opNav:active{
+        border: 2px solid rgb(50, 146, 255);
+        border-radius: 10px;
+    }
+#navAtivo{
+    background-color: rgba(183, 212, 255, 0.0);
+    color: rgb(50, 146, 255);
+    border-bottom: 2px solid rgb(50, 146, 255);
+}
+    #navAtivo:hover{
+        background-color: rgba(183, 212, 255, 0.5);
+    }
+
+/* Depois dos inputs */
+#customUser{
+    padding: 20px;
+    border-radius: 15px;
+    /* border: 1px solid gray; */
+    margin: 70px auto;
+    max-width: 50%;
+    min-width: 400px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 10px gray;
+}
+
+
+#showCustomUser{
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 3em;
+    width: 100px;
+    background-color: black;
+    font-weight: 600;
+    padding: 50px 20px;
+    clip-path: circle(40%);
+}
+
+#divMandarNome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    #divMandarNome button{
+        margin: 15px 10px;
+        width: 100%;
+        font-size: 1.2em;
+        padding: 3px;
+        text-align: center;
+        box-sizing: border-box;
+        color: rgb(50, 146, 255);
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        width: 300px;
+        max-width: 80%;
+    }
+        #divMandarNome button:hover{
+            background-color: rgba(184, 217, 255, 0.37);
+            color: rgb(14, 77, 150);
+        }
+
+    #divMandarNome input{
+        padding: 5px 15px;
+        width: 300px;
+        max-width: 80%;
+        text-align: left;
+        border-radius: 25px;
+        border: 1px solid lightgray;
+    }
+
+#divMandarCor{
+    display: none;
+    color: black;
+}
+    #divMandarCor button{
+        margin: 15px 10px;
+        width: 100%;
+        font-size: 1.2em;
+        padding: 3px;
+        text-align: center;
+        box-sizing: border-box;
+        color: rgb(50, 146, 255);;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+    }
+
+
+/* Chat */
+#chat{
+    display: none;
+    max-width: 65%;
+    min-width: 400px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.705);
+}
+#mensagens{
+    height: 350px;
+    overflow-y: auto;
+    align-content: flex-start;
+}
+form{
+    padding: 10px;
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+    form input{
+        padding: 10px 15px;
+        width: 80%;
+        text-align: left;
+        border-radius: 20px;
+        border: 1px solid lightgray;
+    }
+    form button{
+        font-size: 1.2em;
+        padding: 3px;
+        text-align: center;
+        box-sizing: border-box;
+        color: rgb(50, 146, 255);;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        width: 150px;
+        max-width: 80%;
+    }
+.campoMsg{
+    display: flex;
+    padding: 4px 0px;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.userIcon{
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    margin: auto 20px;
+    user-select: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 30px;
+}
+footer div a{
+    text-decoration: none;
+    color: rgb(50, 146, 255);
+}
+    footer div a:hover{
+        text-decoration: underline;
+    }
